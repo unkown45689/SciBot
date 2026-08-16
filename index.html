@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--page info-->
+    <meta charset="UTF-8">
+    <title>SciBot</title>
+
+    <!--CSS file-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--font awesome icons-->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--area whr the whole thing works-->
+<div class="container">
+
+    <!--the title-->
+    <h1>SciBot</h1>
+
+    <!--the subject buttons etc-->
+    <div class="options">
+
+        <button onclick="setTopic('Physics')">Physics</button>
+        <button onclick="setTopic('Chemistry')">Chemistry</button>
+        <button onclick="setTopic('Biology')">Biology</button>
+        <button onclick="setTopic('')">General</button>
+
+    </div>
+
+    <!--area where chat messages appear-->
+    <div id="chatBox">
+
+        <div class="bot-message">
+            <strong>SciBot</strong><br>
+            Hello! Ask me any science question.
+        </div>
+
+    </div>
+
+    <!--user input section-->
+    <div class="input-area">
+
+        <input id="userInput"
+               placeholder="Ask a science question...">
+
+        <!--voice input button-->
+        <button id="voiceBtn">
+            <i class="fa-solid fa-microphone"></i>
+        </button>
+
+        <!--Send button-->
+        <button id="sendBtn">
+            <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+    </div>
+
+</div>
+
+<!--webpage and script connect-->
+<script src="script.js"></script>
+
+</body>
+</html>
